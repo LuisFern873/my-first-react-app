@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+// Importing modules
+import Greeting from './components/Greeting'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 const user = new Map([
@@ -11,10 +14,6 @@ const user = new Map([
 ])
 
 // Components and JSX
-function Greeting(props){
-    return <h1>Hello, {props.name}!</h1>
-}
-
 function Information(){
     return <div>
         <h3>{user.get('surname')}</h3>
